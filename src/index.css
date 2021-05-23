@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #E3E4E0
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+nav {
+  background-color: #C7C7BB;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 190px;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 50px;
+  }
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.AmySofia {
+
+}
+
+.navbar {
+  height: 100px;
+  padding: 0 100px;
+  margin-bottom: 2%;
+}
+.navbar-text {
+  font-size: 22px;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+}
+
+.socialIcon {
+  margin-left: 20px;
+}
+
+.footerStyle {
+  background-color: #7F867B;
+  padding: 2%;
+  color: #E3E4E0;
+}
+
+.meetYourPhotographer {
+  margin: 2%;
+  color: #7F867B;
+}
+
+.aboutSelfie {
+  width: 80%;
+  padding: 15px;
+  background-color: #D4C8BE;
+}
+
+.formPhoto {
+  width: 80%;
+}
+
+.titleFonts {
+}
+
+.contactForm {
+  background-color: #af9f8c;
+}
+
+
+#photoCarosel {
+  margin-left: 5%;
+}
