@@ -4,24 +4,23 @@ import '../index.css'
 function Form() {
   return (
 <div>
-
-  <div class="row">
-    <div class="col-6">
-    <img class="formPhoto" src="./stylingPhotos/Signing-contract.jpg" alt="Signing a form." />
+<h2> Nobody wants to think about the worst case scenario, </h2>
+<h3 className="titleFonts">  but it's important that we are prepared for it!</h3>
+  <p>
+For both your peace of mind and mine, every photoshoot, no matter how small, comes with a contract.</p>
+  <hr/>
+  <div className="row">
+    <div className="col-6">
+    <h3> If you are a client, </h3><h5>please download the expectations file<a href="./ModelRelease.pdf" target="_blank"> here</a> before our shoot.</h5>
+    <p> This lays out the agreed upon cost of the shoot, what is included in the price, and the method and time of payments.
+This way there are no surprises, so from here on out we can just focus on creating your beautiful photos! </p>
     </div>
-    <div class="col-6">
-    <h2 class="titleFonts"> Nobody wants to think about the worst case scenario. </h2>
-      <p>But for both your peace of mind and mine, let's get some paperwork completed for the just in case!</p>
-      <hr/>
-
-      <h2> If you are a client, </h2><h5>please download the expectations file<a> here</a>. </h5>
-      <p> This will help us stay on the same page about timeline, budget, and the quantity of photos you would like! </p>
-
-      <h2> If you are a model, </h2><h5>please download the modeling contract<a> here</a>. </h5>
-      <p> This will define expectations for the shoot and photo, merchandizing, and personal portfolio
-    usage following our collaboration! </p>
+    <div className="col-6">
+      <h3> If you are a model, </h3><h5>please download the modeling contract<a href="./PhotographyContract.pdf" target="_blank"> here</a> before our shoot</h5>
+      <p> This will define expectations for the shoot and photo, merchandizing, and personal portfolio usage following our collaboration!</p>
     </div>
   </div>
+  <h3>If you have any questions or would like to modify the contract, please feel free to contact me!</h3>
 
 
 </div>

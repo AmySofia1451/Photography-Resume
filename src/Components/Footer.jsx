@@ -6,12 +6,12 @@ let CURRENTYEAR = currentDate.getFullYear();
 
 function Footer() {
   return (
-    <div class="footerStyle">
+    <div className="footerStyle">
       <footer>
 
       <p>Amy Sofia Photography</p>
       <p>Copyright {CURRENTYEAR}</p>
-      
+
       </footer>
     </div>
   );

@@ -5,7 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #E3E4E0
+  background-color: #E3E4E0;
+  color: #7F867B;
 }
 
 code {
@@ -18,13 +19,17 @@ nav {
 }
 
 h1 {
-  font-family: 'Playfair Display', serif;
   font-size: 190px;
+  font-family: 'Megrim', cursive;
 }
 
 h2 {
-  font-family: 'Playfair Display', serif;
   font-size: 50px;
+  font-family: 'Megrim', cursive;
+  }
+
+  h3, p {
+    font-family: 'Raleway', sans-serif;
   }
 
 .center {
@@ -34,8 +39,16 @@ h2 {
   left: 50%;
 }
 
-.AmySofia {
+.ASP {
+  font-size: 180px;
+  color: black;
+  background-color: #E3E4E0;
+  font-family: 'Megrim', cursive;
+}
 
+.navbar-brand {
+  font-family: 'Megrim', cursive;
+  font-size: 25px;
 }
 
 .navbar {
@@ -46,6 +59,9 @@ h2 {
 .navbar-text {
   font-size: 22px;
 }
+.navbar-light .navbar-text a {
+  color: #7F867B;
+}
 
 .nav-item:hover {
   text-decoration: underline;
@@ -53,13 +69,27 @@ h2 {
 
 .socialIcon {
   margin-left: 20px;
+  color: #7F867B;
 }
 
 .footerStyle {
   background-color: #7F867B;
   padding: 2%;
   color: #E3E4E0;
+  font-family: 'Megrim', cursive;
 }
+
+.camera-icon{
+  font-size: 60px;
+  color: #7F867B;
+  line-height: 0;
+}
+
+.Welcome {
+  padding: 5% 2%;
+}
+
+
 
 .meetYourPhotographer {
   margin: 2%;
@@ -76,14 +106,81 @@ h2 {
   width: 80%;
 }
 
-.titleFonts {
+.contactForm {
+  background-color: #D4C8BE;
+  margin: 1% 3% 2%;
+  padding: 2%;
 }
 
-.contactForm {
-  background-color: #af9f8c;
+.contactMessage {
+  padding: 2%;
+}
+
+.featherIcon {
+  font-size: 55px;
+  color: #7F867B;
 }
 
 
 #photoCarosel {
   margin-left: 5%;
+}
+
+
+
+
+
+
+.polaroid a {
+  background: #ffffff;
+  display: inline-block;
+  margin: 55px 75px 30px;
+  padding: 15px 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  -webkit-transition: all .20s linear;
+  -moz-transition: all .20s linear;
+  transition: all .20s linear;
+  z-index: 0;
+  position: relative;
+  transform: rotate(10deg);
+}
+
+.polaroid a:after {
+  color: #333;
+  font-size: 25px;
+  content: attr(title);
+  position: relative;
+  top: 15px;
+}
+
+.polaroid img {
+  display: block;
+  width: 250px;
+}
+
+.polaroid a:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  transform: scale(1.2);
+  z-index: 10;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+}
+
+
+
+
+.pricingBoxes {
+  padding: 20px;
+}
+
+
+
+.photoFormatting {
+  width: 45%;
 }

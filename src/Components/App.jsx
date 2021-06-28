@@ -7,6 +7,9 @@ import Pricing from "./Pricing.jsx";
 import Form from "./Form.jsx";
 import About from "./About.jsx";
 import Contact from "./Contact.jsx";
+import PhotographyPage from './PhotographyPage.jsx';
+import FoodPhotos from '../PhotoLists/foodPhotos.js';
+import AdvertisingPhotos from '../PhotoLists/advertisingPhotos.js';
 
 //import Photo from "./Photos.jsx";
 //import logo from './logo.svg';
@@ -18,13 +21,18 @@ function App() {
   const [showForm, setShowForm] = useState(false);
   const [showAbout, setShowAbout] = useState(false);
   const [showContact, setShowContact] = useState(false);
+  const [showFoodPhotos, setShowFoodPhotos] = useState(false);
+  const [showAdvertPhotos, setShowAdvertPhotos] = useState(false);
 
   function hideComponents() {
     setShowHome(false);
     setShowAbout(false);
     setShowPricing(false);
     setShowForm(false);
-      setShowContact(false);
+    setShowContact(false);
+    setShowFoodPhotos(false);
+    setShowAdvertPhotos(false);
+
   }
 
   function showHomeComponent() {
@@ -52,11 +60,23 @@ function App() {
     setShowContact(true);
   }
 
+  function showFoodComponent() {
+    hideComponents();
+    setShowFoodPhotos(true);
+  }
+
+  function showAdvertComponent() {
+    hideComponents();
+    setShowAdvertPhotos(true);
+  }
+
   return (
     <div className="App">
       <Header onHomeClick={showHomeComponent} onPricingClick={showPricingComponent}
       onFormClick={showFormComponent} onAboutClick={showAboutComponent} onContactClick={showContactComponent}/>
-      {showHome ? <Home /> : null}
+      {showHome ? <Home onFoodClick={showFoodComponent} onAdvertClick={showAdvertComponent}/> : null}
+      {showFoodPhotos ? <PhotographyPage images={FoodPhotos} /> : null}
+      {showAdvertPhotos ? <PhotographyPage images={AdvertisingPhotos} /> : null}
       {showPricing ? <Pricing /> : null}
       {showForm ? <Form /> : null}
       {showAbout ? <About /> : null}
